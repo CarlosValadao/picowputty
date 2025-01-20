@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(picowuart picowuart.c )
+add_executable(picowuart picowuart.c buzzer.c rgb.c)
 
 pico_set_program_name(picowuart "picowuart")
 pico_set_program_version(picowuart "0.1")
