@@ -26,13 +26,13 @@ int main()
     while (true)
     {
         scanf("%1024s", buffer);
-        if(strcmp(buffer, 'R') == 0) rgb_turn_on_red(&ledpins);
-        else if(strcmp(buffer, 'G') == 0) rgb_turn_on_green(&ledpins);
-        else if(strcmp(buffer, 'B') == 0) rgb_turn_on_blue(&ledpins);
-        else if(strcmp(buffer, 'W') == 0) rgb_turn_on_white(&ledpins);
-        else if(strcmp(buffer, 'W') == 0) rgb_turn_on_white(&ledpins);
-        else if(strcmp(buffer, 'O') == 0) rgb_turn_off_white(&ledpins);
-        else if(strcmp(buffer, 'Z') == 0) buzzer_beep(BUZZER_PIN, BEEP_DURATION_MS);
+        if(strcmp(buffer, "R") == 0) rgb_turn_on_red(&ledpins);
+        else if(strcmp(buffer, "G") == 0) rgb_turn_on_green(&ledpins);
+        else if(strcmp(buffer, "B") == 0) rgb_turn_on_blue(&ledpins);
+        else if(strcmp(buffer, "W") == 0) rgb_turn_on_white(&ledpins);
+        else if(strcmp(buffer, "W") == 0) rgb_turn_on_white(&ledpins);
+        else if(strcmp(buffer, "O") == 0) rgb_turn_off_white(&ledpins);
+        else if(strcmp(buffer, "Z") == 0) buzzer_beep(BUZZER_PIN, BEEP_DURATION_MS);
         sleep_ms(100);
     }
 
