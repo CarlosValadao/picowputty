@@ -4,7 +4,6 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "buzzer.h"
-#include "keyboard4x4.h"
 #include "rgb.h"
 
 
@@ -20,9 +19,10 @@
 int main()
 {
     stdio_init_all();
-    init_gpio();
     char buffer[1024];
     rgbpins ledpins = {13, 11, 12};
+    rgb_init(&ledpins);
+    buzzer_init(BUZZER_PIN);
     while (true)
     {
         scanf("%1024s", buffer);
